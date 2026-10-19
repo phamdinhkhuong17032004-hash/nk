@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ - Phạm Đình Khương (231A011185)</title>
+  <style>
+    :root {
+      --primary-color: #7c3aed;
+      --secondary-color: #a855f7;
+      --accent-color: #f43f5e;
+      --bg-dark: #0f071e;
+      --card-bg: rgba(26, 15, 46, 0.85);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(244, 63, 94, 0.2) 0%, transparent 40%);
+      color: var(--text-main);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .profile-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 20px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    }
+
+    .avatar-wrapper {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      margin-bottom: 20px;
+      box-shadow: 0 0 25px rgba(124, 58, 237, 0.5);
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--bg-dark);
+    }
+
+    .greeting {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 10px rgba(168, 85, 247, 0.4);
+    }
+
+    .name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(to right, #c084fc, #f43f5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .student-id {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 6px 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      letter-spacing: 1px;
+    }
+
+    .result-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 22px;
+      background: var(--accent-color);
+      border-radius: 3px;
+    }
+
+    .image-container {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid rgba(168, 85, 247, 0.4);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .result-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Thẻ Thông Tin Cá Nhân -->
+    <div class="profile-card">
+      <div class="avatar-wrapper">
+        <!-- Đã nối chính xác tên tệp ảnh Avatar của bạn -->
+        <img class="avatar" src="c:\Users\ADMIN\Pictures\Screenshots\Ảnh chụp màn hình 2026-10-19 220251.png" alt="Avatar Phạm Đình Khương">
+      </div>
+      <div class="greeting">Xin Chào Mọi Người</div>
+      <div class="name">Phạm Đình Khương</div>
+      <div class="student-id">Mã sinh viên: 231A011185</div>
+    </div>
+
+    <!-- Thẻ Kết Quả Bài Tập 38 -->
+    <div class="result-card">
+      <div class="section-title">Kết Quả Bài Tập 38</div>
+      <div class="image-container">
+        <!-- Đã nối chính xác tên tệp ảnh Bài tập 38 của bạn -->
+        <img class="result-img" src="c:\Users\ADMIN\Pictures\Screenshots\Ảnh chụp màn hình 2026-10-19 215902.png" alt="Kết quả Bài tập 38">
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 - Phạm Đình Khương | Trang cá nhân bài tập HTML/CSS</p>
+    </footer>
+  </div>
+
+</body>
+</html>
